@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Popup Time after 3 second</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- Button trigger modal 
+    Эта кнопка отображается на странице для вызова модального окна.
+    Я ее убрал, так как у меня появляется окно при загрузке либо обновлении страницы.
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+        Launch demo modal
+      </button>
+    -->
+      
+      <!-- Modal window-->
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            
+            <div class="modal-body">
+              Это модальное окно Bootstrap 4 которое показывается через 3 секунды после обновления страницы. После нажатия кнопки я согласен сохраняется сосояние в LocalStorage и при повторном обновлении страницы больше пользователю не показывается.
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="modal-yes-btn">Я согласен</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Не беспокоить</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> 
+
+    <script src="main.js"></script>
+</body>
+</html>
